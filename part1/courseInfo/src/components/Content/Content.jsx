@@ -1,11 +1,15 @@
 import ContentInfo from "./ContentInfo";
 
-const Content = ({ part1, part2, part3 }) => {
+const Content = ({ parts }) => {
   return (
     <>
-      <ContentInfo name={part1.name} exercises={part1.exercises} />
-      <ContentInfo name={part2.name} exercises={part2.exercises} />
-      <ContentInfo name={part3.name} exercises={part3.exercises} />
+      {parts.map((part) => (
+        <ContentInfo
+          key={part.name}
+          name={part.name}
+          exercises={part.exercises}
+        />
+      ))}
     </>
   );
 };
