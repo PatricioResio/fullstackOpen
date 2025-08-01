@@ -31,7 +31,7 @@ const App = () => {
         add={() => setBad(bad + 1)}
         addTotal={() => setTotal(total + 1)}
       />
-      <Statics statics={statics} />
+      {total === 0 ? <h2>No feedback given</h2> : <Statics statics={statics} />}
     </div>
   );
 };
