@@ -38,14 +38,16 @@ const App = () => {
       {all === 0 ? (
         <h3>No feedback given</h3>
       ) : (
-        <>
-          <StaticsLine name="good" value={statics.good} />
-          <StaticsLine name="neutral" value={statics.neutral} />
-          <StaticsLine name="bad" value={statics.bad} />
-          <StaticsLine name="all" value={statics.all} />
-          <StaticsLine name="average" value={statics.average} />
-          <StaticsLine name="positive" value={statics.positive} />
-        </>
+        <table>
+          <tbody>
+            <StaticsLine name="good" value={statics.good} />
+            <StaticsLine name="neutral" value={statics.neutral} />
+            <StaticsLine name="bad" value={statics.bad} />
+            <StaticsLine name="all" value={statics.all} />
+            <StaticsLine name="average" value={statics.average} />
+            <StaticsLine name="positive" value={statics.positive} />
+          </tbody>
+        </table>
       )}
     </div>
   );

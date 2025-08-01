@@ -1,9 +1,10 @@
 const StaticsLine = ({ name, value }) => {
   return (
     <>
-      <p>
-        {name} {value}
-      </p>
+      <tr>
+        <td>{name}</td>
+        <td>{value}</td>
+      </tr>
     </>
   );
 };
