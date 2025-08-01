@@ -1,9 +1,9 @@
-const Button = ({ add, name, addTotal }) => {
+const Button = ({ add, name, addAll }) => {
   return (
     <button
       onClick={() => {
         add();
-        addTotal();
+        addAll();
       }}
     >
       {name}
